@@ -16,6 +16,50 @@
         <p>This is the main content of the page.</p>
 
         <?php
+            /*
+                $bool = true;/*
+                $a = 1;
+                $b = 4;
+
+                $result = match ($a) {
+                1,3,5  => "Variable a is equal to one!",
+                2  => "Variable a is equal to two!",
+                default => "None were a match",
+                };
+
+                echo $result;
+
+                
+                switch($a){
+                    case 1:
+                        echo "The first case is correct!";
+                        echo "<br>";
+                        break;
+                    case 3:
+                        echo "THe second case is correct!";
+                        echo "<br>";
+                        break;
+                    default:
+                        echo "None of the conditions were true";
+                        echo "<br>";
+                        break;
+                }
+
+                if ($a < $b && !$bool){
+                    echo "first condition is true";
+                    echo "<br>";
+                }else if($a < $b && $bool){
+                    echo "Second condition is true";
+                    echo "<br>";
+                }else{
+                    echo "None of the conditions were true";
+                    
+                }
+            */
+        ?>
+
+        <?php
+        /*
         //Arithmetic Operators
         echo 1 + 2 ;
         echo "<br>";
@@ -120,12 +164,12 @@
         echo "<br>";
         echo $a++;
         echo "<br>";
+        
         echo --$a;
         echo "<br>";  
     
 
         //String concatenation
-        /*
         $a = "Hello";
         $b = "World";
         $c = $a . " ". $b;
