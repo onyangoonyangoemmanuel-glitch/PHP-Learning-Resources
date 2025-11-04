@@ -18,11 +18,11 @@
         <button type="button">🔍</button>
       </div>
 
-      <nav class="user-links">
-        <a href="#">Donate</a>
-        <a href="#">Create account</a>
-        <a href="#">Log in</a>
-      </nav>
+  <nav class="user-links" aria-label="User menu">
+    <a href="donate.php">Donate</a>
+    <a href="signup.php">Create account</a>
+    <a href="login.php">Log in</a>
+  </nav>
     </div>
   </div>
 </header>

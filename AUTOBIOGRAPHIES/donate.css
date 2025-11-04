@@ -1,0 +1,113 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  color: #222;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+  margin: 0;
+  color: #202122;
+}
+
+main.donation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 40px;
+}
+
+.donation-message {
+  flex: 2;
+}
+
+.donation-message h2 {
+  color: #3366cc;
+}
+
+.donation-options {
+  margin-top: 20px;
+}
+
+.donation-type button {
+  background-color: #e8e8e8;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.donation-type button.active {
+  background-color: #3366cc;
+  color: white;
+}
+
+.donation-amounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.donation-amounts button {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donation-amounts button:hover {
+  background-color: #eef4ff;
+  border-color: #3366cc;
+}
+
+.donation-amounts input {
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.donate-btn {
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.donate-btn:hover {
+  background-color: #224a99;
+}
+
+.donation-info {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}

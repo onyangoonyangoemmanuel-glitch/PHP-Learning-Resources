@@ -158,3 +158,37 @@ h1 {
   transform: scale(0.98);
 }
 
+/* ensure nav links are above other elements */
+.user-links {
+  z-index: 2;               /* keep links clickable above overlays */
+}
+
+/* explicit color + hover */
+.user-links a {
+  color: #fff;              /* visible on dark header */
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* donate button standout */
+.user-links a.signup-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* smaller screens: make them stack and readable */
+@media (max-width: 600px) {
+  .user-links {
+    gap: 8px;
+  }
+  .user-links a {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+  }
+}

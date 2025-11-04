@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Great Leaders Foundation</title>
+  <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Great Leaders Foundation</h1>
+      <p>Building a legacy of impact together.</p>
+    </div>
+  </header>
+
+  <main class="donation-container">
+    <section class="donation-message">
+      <h2>Your contribution makes a difference</h2>
+      <p>Fill in your details below to support our mission.</p>
+
+      <form action="process_donation.php" method="POST" class="donation-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="amount">Donation Amount (Ksh):</label>
+        <input type="number" id="amount" name="amount" required min="100">
+
+        <label for="message">Message (optional):</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+
+        <button type="submit" class="donate-btn">Donate Now</button>
+      </form>
+    </section>
+
+    <aside class="donation-info">
+      <h3>Where your donation goes</h3>
+      <p><strong>Programs:</strong> Supporting leadership mentorship and education.</p>
+      <p><strong>Technology:</strong> Maintaining our website and archives.</p>
+      <p><strong>Community:</strong> Empowering the next generation of changemakers.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Great Leaders Foundation | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
