@@ -5,11 +5,13 @@ header {
     padding: 15px 30px;
 }
 
-/* ===== HEADER CONTENT CONTAINER ===== */
+/* ===== HEADER CONTENT ===== */
 .header-content {
     display: flex;
-    justify-content: space-between; /* puts title left, search right */
-    align-items: center; /* vertically aligns both on same height */
+    justify-content: space-between; /* Title left, search right */
+    align-items: center; /* Aligns both vertically */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    gap: 15px; /* Adds a small gap when they wrap */
 }
 
 /* ===== TITLE ===== */
@@ -27,6 +29,7 @@ h1 {
     background-color: white;
     border-radius: 25px;
     padding: 5px 10px;
+    flex-shrink: 0; /* Prevents it from squishing */
 }
 
 /* ===== SEARCH INPUT ===== */
@@ -54,4 +57,27 @@ h1 {
 
 .search-box button:hover {
     background-color: #45a049;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column; /* stack items vertically */
+        align-items: center; /* center both title and search bar */
+        text-align: center;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 400px; /* prevents it from stretching too wide */
+        justify-content: center;
+    }
+
+    .search-box input[type="text"] {
+        width: 70%; /* make input fill most of search box width */
+    }
+
+    .search-box button {
+        width: 25%;
+    }
 }
