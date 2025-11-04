@@ -81,3 +81,71 @@ h1 {
         width: 25%;
     }
 }
+/* ===== RIGHT MENU WRAPPER ===== */
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between search bar and user links */
+}
+
+/* ===== USER LINKS ===== */
+.user-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* General link style */
+.user-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* ===== DONATE BUTTON ===== */
+.user-links a:first-child {
+    background-color: #4CAF50; /* Wikipedia-like orange */
+    color: white;
+    font-weight: 600;
+}
+
+.user-links a:first-child:hover {
+    background-color: #4CAF50;
+    box-shadow: 0 0 8px#4CAF50;
+}
+
+/* ===== OTHER LINKS ===== */
+.user-links a:not(:first-child) {
+    color: white;
+}
+
+.user-links a:not(:first-child):hover {
+    background-color: #444;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 600px) {
+    .right-menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .user-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .user-links a {
+        background-color: #333;
+        color: white;
+        border-radius: 20px;
+        padding: 8px 15px;
+    }
+
+    .user-links a:first-child {
+        background-color: #4CAF50;
+    }
+}

@@ -8,16 +8,25 @@
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <h1>BIOGRAPHIPEDIA</h1>
+<header>
+  <div class="header-content">
+    <h1>BIOGRAPHIPEDIA</h1>
 
-            <div class="search-box">
-                <input type="text" placeholder="Search biographies...">
-                <span class="search-icon">🔍</span>
-            </div>
-        </div>
-    </header>
+    <div class="right-menu">
+      <div class="search-box">
+        <input type="text" placeholder="Search biographies..." />
+        <button>🔍</button>
+      </div>
+
+      <nav class="user-links">
+        <a href="#">Donate</a>
+        <a href="#">Create account</a>
+        <a href="#">Log in</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
 
   <main>
 
