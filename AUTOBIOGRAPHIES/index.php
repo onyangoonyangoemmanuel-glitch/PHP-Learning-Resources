@@ -14,8 +14,8 @@
 
     <div class="right-menu">
       <div class="search-box">
-        <input type="text" placeholder="Search biographies..." />
-        <button>🔍</button>
+        <input type="text" id="searchInput" placeholder="Search biographies..." />
+        <button type="button">🔍</button>
       </div>
 
       <nav class="user-links">
@@ -285,11 +285,50 @@
             He once said, “Injustice anywhere is a threat to justice everywhere.” Those words continue to remind the world that the fight for equality is not only for one nation or race but for all humanity.<br><br>
     </section>
 
+    <section class="bio">
+      <h2>Mother Teresa</h2>
+
+            Mother Teresa, born Anjezë Gonxhe Bojaxhiu on August 26, 1910, in Skopje (now part of North Macedonia), was one of the most compassionate and selfless humanitarians in modern history. From a young age, she felt a deep calling to serve others, inspired by her strong faith and the example of her devout Catholic family.<br><br>
+
+            At the age of 18, she joined the Sisters of Loreto and traveled to India, where she began teaching at St. Mary’s High School in Calcutta (now Kolkata). Although she loved her teaching work, she soon felt another, stronger call — to serve “the poorest of the poor.”<br><br>
+
+            In 1948, Mother Teresa left her convent and began working in the slums of Calcutta, tending to the sick, the dying, and the destitute. With compassion as her guiding light, she founded the **Missionaries of Charity** in 1950, a religious congregation devoted to caring for those in need — the hungry, the homeless, and the forgotten.<br><br>
+
+            Her simple blue-and-white sari became a symbol of peace and service. Through her organization, Mother Teresa established orphanages, hospices, and leprosy centers around the world, bringing dignity and comfort to millions of suffering people. Her tireless work earned her global admiration and recognition.<br><br>
+
+            Despite her fame, Mother Teresa lived a life of humility. She often said, “Not all of us can do great things. But we can do small things with great love.” Her mission was never about wealth or power but about love and compassion for every human being, regardless of race, religion, or background.<br><br>
+
+            In 1979, she was awarded the **Nobel Peace Prize** for her humanitarian efforts. Even as she aged and her health declined, she continued to travel and serve others until her death on **September 5, 1997**. Her legacy lives on through the Missionaries of Charity, which continues her work in more than 130 countries.<br><br>
+
+            Mother Teresa was canonized as a saint by the Roman Catholic Church on **September 4, 2016**, and is now known as **Saint Teresa of Calcutta**.<br><br>
+
+            Her life reminds the world that true greatness is found not in power or fame, but in love, kindness, and service to others.<br><br>
+    </section>
+
   </main>
 
   <footer>
     <p>&copy; 2025 Great Leaders Project. All rights reserved.</p>
   </footer>
+
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function() {
+  const query = this.value.toLowerCase();
+  const bios = document.querySelectorAll(".bio");
+
+  bios.forEach(bio => {
+    const name = bio.querySelector("h2") ? bio.querySelector("h2").textContent.toLowerCase() : "";
+    const text = bio.textContent.toLowerCase();
+
+    if (name.includes(query) || text.includes(query)) {
+      bio.style.display = "block";
+    } else {
+      bio.style.display = "none";
+    }
+  });
+});
+</script>
+
 
 </body>
 </html>
