@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate - Great Leaders Foundation</title>
+  <title>Great Leaders</title>
   <link rel="stylesheet" href="donate.css">
 </head>
 <body>

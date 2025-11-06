@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome</title>
+  <title>Great Leaders</title>
 </head>
 <body>
   <h1>Welcome, <?php echo $_SESSION['fullname']; ?>!</h1>
