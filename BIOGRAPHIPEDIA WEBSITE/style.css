@@ -1,3 +1,121 @@
+/* ============ HEADER STYLING ============ */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Flex container */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Logo text */
+.logo {
+  color: #0056d2;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Right-side menu */
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #f8f9fa;
+  transition: box-shadow 0.2s ease;
+}
+
+.search-box:hover {
+  box-shadow: 0 0 0 2px #e0e0e0;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 8px 14px;
+  width: 250px;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.search-box button {
+  background: #0056d2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #0041a8;
+}
+
+/* Navigation links */
+.user-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.95rem;
+}
+
+.user-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.user-links a:hover {
+  color: #0056d2;
+}
+
+/* "Create account" styled like a button */
+.signup-btn {
+  border: 1px solid #0056d2;
+  color: #0056d2;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #0056d2;
+  color: white;
+}
+
+/* Donate link subtle style */
+.donate-link {
+  font-weight: 500;
+  color: #222;
+}
+
+
+/*new header ends here
 /* ===== HEADER ===== */
 header {
     background-color: #222;

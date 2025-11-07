@@ -15,10 +15,92 @@
     </header>
 
     <main>
+    
+        <?php
+        //Associative Array
+        $tasks = [
+            "Laundry" => "Daniel",
+            "Trash" =>"Frida",
+            "Vacuum" =>"Basse",
+            "Dishes" =>"Bella",
+        ];
 
+        $tasks["dusting"] = "Tara";
+        print_r($tasks);
+        echo "<br>";
+
+        echo count($tasks);
+        echo "<br>";
+
+        echo $tasks["Laundry"];
+        echo "<br>";
+
+        print_r($tasks);
+        echo "<br>";
+
+        sort($tasks);
+        print_r($tasks);
+        echo "<br>";
+
+        $fruits = [
+            "apple",//0
+            "banana",//1
+            "cherry",//2
+        ];
+
+        #$fruits = array("apple", "banana", "cherry");
+        #$fruits = ["apple", "banana", "cherry"];
+        #$fruit01 = "apple";
+        #$fruit02 = "pear";
+
+        //echo $fruits;
+        //echo "<br>";
+
+        echo $fruits[01];
+        echo "<br>";
+
+        $fruits[] = "orange";
+        echo $fruits[03];
+        echo "<br>";
+
+        $fruits[1] = "orange";
+        echo $fruits[01];
+        echo "<br>";
+
+        unset($fruits[1]);
+        echo $fruits[1]; 
+        echo "<br>";
+        
+        array_splice($fruits, 0, 1);
+        echo $fruits[0]; 
+        echo "<br>";
+
+        array_push($fruits, "Mango");
+        print_r($fruits);
+        echo "<br>";
+
+        $food = [
+            array("apple", "mango"),
+            "banana",
+            "cherry"
+        ];
+
+        echo $food[0][0];
+        echo "<br>";
+
+        $food = [
+            "fruits" => array("apple", "banana", "cherry"),
+            "meat" => array("chicken", "fish"),
+            "vegetables" => array("cucumber", "carrot"),
+        ];
+
+        echo $food["vegetables"][0];
+        ?>
+
+        <!--
         <p>This is the main content of the page.</p>
 
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form action="<?php # echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <input type="number" name="num01" placeholder="Number One" required>
             <select name="operator">
                 <option value="add">+</option>
@@ -29,8 +111,10 @@
             <input type="number" name="num02" placeholder="Number two" required>
             <button>Calculate</button>
         </form>
+        -->
 
         <?php
+            /*
             if($_SERVER["REQUEST_METHOD"] == "POST"){
                 //Grab data from inputs
                 //$num01 = $_POST["num01"];
@@ -78,7 +162,9 @@
                     $value . "</p>";
                 }
             }
+            */
         ?>
+
 
         <?php
             /*
