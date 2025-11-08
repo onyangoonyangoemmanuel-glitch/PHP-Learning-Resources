@@ -15,8 +15,83 @@
     </header>
 
     <main>
-    
         <?php
+            $string = "Hello World";
+            echo $string;
+            echo "<br>";
+
+            echo strtolower($string);
+            echo "<br>";
+
+            echo strtoupper($string);
+            echo "<br>";
+
+            echo substr($string, 2);
+            echo "<br>";
+
+            echo substr($string, 2, 7);
+            echo "<br>";
+
+            echo substr($string, 2, -1);
+            echo "<br>";
+
+            echo strpos($string, "d");
+            echo "<br>";
+
+            echo str_replace("World", "John Doe", $string);
+            echo "<br>";
+
+            $number = -5.5;
+
+            echo abs($number);
+            echo "<br>";
+
+            echo round($number);
+            echo "<br>";
+
+            echo pow(2, 3);
+            echo "<br>";
+
+            echo sqrt(16);
+            echo "<br>";
+
+            echo rand(1, 600);
+            echo "<br>";
+
+            $array = ["apple", "banana", "orange"];
+
+            $array1 = ["kiwi"];
+            echo count($array); 
+            echo "<br>";
+
+            array_push($array, "kiwi");
+            print_r($array);
+            echo "<br>";
+
+            array_pop($array);
+            print_r($array);
+            echo "<br>";
+
+            print_r(array_reverse($array));
+            echo "<br>";
+
+            print_r(array_merge($array, $array1));
+            echo "<br>";
+
+            echo date("Y-m-d H:i:s");
+            echo "<br>";
+
+            //unix timestamp
+            echo time();
+            echo "<br>";
+
+            $date = "2009-06-06 12:00:00";
+            echo strtotime($date);
+            echo "<br>";
+        ?>
+
+        <?php
+        /*
         //Associative Array
         $tasks = [
             "Laundry" => "Daniel",
@@ -95,6 +170,7 @@
         ];
 
         echo $food["vegetables"][0];
+        */
         ?>
 
         <!--
@@ -404,15 +480,6 @@
         <p>
             <?php
             /*
-                // Simple PHP code to display a message
-                echo "Hello, World! Today is " . date("l, F jS, Y") . ".<br><br>";
-            */ 
-            ?>
-        </p>
-
-        <p>
-            <?php
-            /*
                 // Scalar data types (contain one value)
                 $name = "Wonderful Counselor";
                 $int = 143999;
@@ -468,6 +535,11 @@
             ?>
         </p>
         -->
+        <p>
+            <?php
+                echo "Hello, World! Today is " . date("l, F jS, Y") ;
+            ?>
+        </p>
 
     </main>
 
