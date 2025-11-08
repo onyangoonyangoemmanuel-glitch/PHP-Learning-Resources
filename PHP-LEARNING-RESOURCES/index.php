@@ -22,6 +22,33 @@ declare(strict_types=1);
 
     <main>
         <?php
+            //constant
+            define("PI", 3.14);
+            echo PI;
+            echo "<br>"; 
+
+            define("IS_ADMIN", true);
+            echo IS_ADMIN;
+            echo "<br>"; 
+
+            function test()
+            {
+                echo PI;
+            }
+            test();
+            echo "<br>"; 
+
+            define("NAME", "Jane");
+            echo NAME;
+            echo "<br>"; 
+
+            //variable
+            $name = "John";
+            $name = "Doe";
+            echo $name;
+        ?>
+
+        <?php
         /*
         //class scope
         class MyClass
@@ -54,6 +81,7 @@ declare(strict_types=1);
         echo MyClass::$classVar;
         */
 
+        /*
         //function scope
             function myFunc()
             {
@@ -163,6 +191,7 @@ declare(strict_types=1);
             //Global scope var, outside function
             $test = "John";            
             echo $test;
+            */
         ?>
 
         <?php
