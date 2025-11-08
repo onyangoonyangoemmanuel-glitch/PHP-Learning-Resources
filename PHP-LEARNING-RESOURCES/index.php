@@ -22,6 +22,151 @@ declare(strict_types=1);
 
     <main>
         <?php
+        /*
+        //class scope
+        class MyClass
+        {
+            public $classVar = "Hello, World!";
+
+            public function myMethod()
+            {
+                echo $this->classVar;
+            }
+        }
+
+        $obj = new MyClass();
+        echo $obj->classVar;   // ✅ Works
+        $obj->myMethod();      // ✅ Outputs: Hello, World!
+
+        class MyClass
+        {
+            //Define a class variable
+            public $classVar = "Hello, World!";
+
+            //Define a class method
+            public function myMethod()
+            {
+                //Use the class variable
+                echo $this->classVar;
+            }
+        }
+
+        echo MyClass::$classVar;
+        */
+
+        //function scope
+            function myFunc()
+            {
+                //declare a static variable
+                static $staticVar = 0;
+
+                //Increment a static variable
+                $staticVar++;
+
+                //Use the static variable
+                return $staticVar;
+            }
+
+            echo myFunc();
+            echo "<br>";
+
+            echo myFunc();
+            echo "<br>"; 
+
+            echo myFunc();
+            echo "<br>"; 
+
+
+            function myFunct()
+            {
+                //declare a static variable
+                $staticVar = 0;
+
+                //Increment a static variable
+                $staticVar++;
+
+                //Use the static variable
+                return $staticVar;
+            }
+
+            echo myFunct();
+            echo "<br>";
+
+            echo myFunct();
+            echo "<br>";            
+
+            $test = "Johnnie Tester"; 
+            function myFunction5()
+            {
+                //Define a local variable
+                $localVar = "Hello, World!";
+
+                //Use the local variable
+                return $GLOBALS["test"];
+            }
+
+            echo myFunction5();
+            echo "<br>";
+
+            $test = "Johnnie Test"; 
+            function myFunction4()
+            {
+                global $test;
+                //Define a local variable
+                $localVar = "Hello, World!";
+
+                //Use the local variable
+                return $test;
+            }
+
+            echo myFunction4();
+            echo "<br>";
+
+            //Passing a global variable within the scope of a function
+            $test = "Johnnie"; 
+            function myFunction3($test)
+            {
+                //Define a local variable
+                $localVar = "Hello, World!";
+
+                //Use the local variable
+                return $test;
+            }
+
+            echo myFunction3($test );
+            echo "<br>";
+
+            function myFunction2()
+            {
+                //Define a local variable
+                $localVar = "Hello, World!";
+
+                //Use the local variable
+                return $localVar;
+            }
+
+            echo $localVar;
+            echo "<br>";
+
+            function myFunction()
+            {
+                //Define a local variable
+                $localVar = "Hello, World!";
+
+                //Use the local variable
+                return $localVar;
+            }
+
+            echo myFunction();
+            echo "<br>";
+
+            //Global scope var, outside function
+            $test = "John";            
+            echo $test;
+        ?>
+
+        <?php
+            /*
             //use a global variable within a function's scope
             $test = "John";
             function calculator(int $num01, int $num02)
@@ -87,6 +232,7 @@ declare(strict_types=1);
             echo "<br>";
 
             echo strlen("John Doe");
+            */
         ?>
 
         <?php
@@ -613,7 +759,7 @@ declare(strict_types=1);
         -->
         <p>
             <?php
-                echo "Hello World! Today is " . date("l, F jS, Y") ;
+                //echo "Hello World! Today is " . date("l, F jS, Y") ;
             ?>
         </p>
 
