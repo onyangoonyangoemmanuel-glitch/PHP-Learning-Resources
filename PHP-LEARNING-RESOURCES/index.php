@@ -1,3 +1,9 @@
+<?php
+//type declaration
+declare(strict_types=1);
+//impose data types on functions
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +22,75 @@
 
     <main>
         <?php
+            //use a global variable within a function's scope
+            $test = "John";
+            function calculator(int $num01, int $num02)
+            {
+                global  $test;
+               $result = $num01 + $num02;
+               return $result;
+            }
+
+            $test = calculator(2,5);
+            echo $test;
+            echo "<br>";
+
+            //specified data type
+            function sayHello5(string $name="Jane")
+            {
+                return "Hello " .$name . "!";
+            }
+
+            $test = sayHello5("specifiedJohn");
+            echo $test;
+            echo "<br>";
+
+            //with default value
+            function sayHello4($name="Jane")
+            {
+                return "Hello " .$name . "!";
+            }
+
+            $test = sayHello4();
+            echo $test;
+            echo "<br>";
+
+            //overriden default value
+            $test = sayHello4("Johnnie");
+            echo $test;
+            echo "<br>";
+
+            function sayHello3($name)
+            {
+                return "Hello " .$name . "!";
+            }
+
+            $test = sayHello3("John");
+            echo $test;
+            echo "<br>";
+
+            function sayHello2()
+            {
+                return "Hello World 2!";
+            }
+
+            $test = sayHello2();
+            echo $test;
+            echo "<br>";
+
+            function sayHello()
+            {
+                echo "Hello World!";
+            }
+
+            sayHello();
+            echo "<br>";
+
+            echo strlen("John Doe");
+        ?>
+
+        <?php
+        /*
             $string = "Hello World";
             echo $string;
             echo "<br>";
@@ -88,6 +163,7 @@
             $date = "2009-06-06 12:00:00";
             echo strtotime($date);
             echo "<br>";
+            */
         ?>
 
         <?php
@@ -537,7 +613,7 @@
         -->
         <p>
             <?php
-                echo "Hello, World! Today is " . date("l, F jS, Y") ;
+                echo "Hello World! Today is " . date("l, F jS, Y") ;
             ?>
         </p>
 
