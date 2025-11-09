@@ -22,6 +22,51 @@ declare(strict_types=1);
 
     <main>
         <?php
+        /*
+            for($i = 0; $i <10; $i++)
+            {
+                echo "This is iteration number " . $i . "<br";
+            }
+        */
+            $fruits = array("Apple" => "Red", "Banana"=> "Yellow", "Orange" => "Orange");
+            foreach($fruits as $fruit => $color){
+                 echo "This is a " . $fruit . ", that has a color of " . $color . "<br>";
+            }
+
+            $fruits = array("Apple", "Banana", "Orange");
+
+            foreach($fruits as $fruit){
+                 echo "This is a " . $fruit . "<br>";
+            }
+
+            $test = 2;
+
+            do
+            {
+                echo $test;
+                $test++;
+            }
+            while($test < 10);
+            echo "<br>";
+
+            $test = 5;
+            while($test < 10)
+            {
+                echo $test;
+                $test++;
+            }
+            echo "<br>"; 
+
+            $boolean = true;
+            while($boolean)
+            {
+                echo $boolean;
+                $boolean = false;
+            }
+        ?>
+        
+        <?php
+            /*
             //constant
             define("PI", 3.14);
             echo PI;
@@ -46,6 +91,7 @@ declare(strict_types=1);
             $name = "John";
             $name = "Doe";
             echo $name;
+            */
         ?>
 
         <?php
